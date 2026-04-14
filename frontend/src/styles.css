@@ -148,6 +148,58 @@ textarea {
   margin-bottom: 20px;
 }
 
+.tab-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.tab-btn {
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(148, 163, 184, 0.15);
+  color: #475569;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #2563eb, #ec4899);
+  color: white;
+  border-color: transparent;
+}
+
+.tab-btn:hover:not(.active):not(:disabled) {
+  background: rgba(148, 163, 184, 0.28);
+  transform: none;
+  box-shadow: none;
+}
+
+.manual-input-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.remove-btn {
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.remove-btn:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.22);
+  transform: none;
+  box-shadow: none;
+}
+
 input, select {
   width: 100%;
   padding: 14px 16px;
